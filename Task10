@@ -1,0 +1,78 @@
+package lab06;
+
+
+public class Test{ 
+
+public static void main(String [] args){ 
+
+Cat c1 = new Cat(); 
+
+Cat c2 = new Cat("Black"); 
+
+Cat c3 = new Cat("Brown", "jumping"); 
+
+Cat c4 = new Cat("Red", "purring"); 
+
+c1.printCat(); 
+
+c2.printCat(); 
+
+c3.printCat(); 
+
+c4.printCat(); 
+
+c1.changeColor("Blue"); 
+
+c3.changeColor("Purple"); 
+
+c1.printCat(); 
+
+c3.printCat(); 
+
+} 
+
+} 
+
+
+
+public class Cat{ 
+
+public String color = "White"; 
+
+public String action = "sitting"; 
+
+
+public Cat(){
+
+  
+
+}
+
+public Cat(String a){
+
+  color = a;
+
+}
+
+public Cat(String a,String b){
+
+  color = a;
+
+  action = b;
+
+}
+
+public void printCat(){
+
+  System.out.println(color + " Cat is "+ action);
+
+}
+
+public void changeColor(String a){
+
+  color = a;
+
+}
+
+} 
+
