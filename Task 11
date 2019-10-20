@@ -1,0 +1,26 @@
+package lab06;
+
+public class Quiz { 
+public static void main (String[] args){ 
+Dog odie = new Dog("Red"); 
+Dog goofy = new Dog("Blue"); 
+odie.bark(); 
+goofy.bark(); 
+odie.changeColor("Brown"); 
+odie.bark(); 
+} 
+} 
+
+public class Dog { 
+private String color = "Black"; 
+
+public Dog(String a){
+  color = a;
+}
+public void bark(){
+  System.out.println(color + " dog is barking");
+}
+public void changeColor(String a){
+  color = a;
+}
+}
